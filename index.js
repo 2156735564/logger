@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Logger_1 = require("./Logger");
+var logger = Logger_1.Logger.getInstance();
+logger.setLogLevel(Logger_1.LogLevel.VERBOSE);
+logger.verbose('This is a verbose log message.');
+logger.info('This is an informational log message.');
+logger.warning('This is a warning log message.');
+logger.error('This is an error log message.');
+console.log('-----------');
+logger.setLogLevel(Logger_1.LogLevel.INFO);
+logger.verbose('This is a verbose log message.');
+logger.info('This is an informational log message.');
+logger.warning('This is a warning log message.');
+logger.error('This is an error log message.');
